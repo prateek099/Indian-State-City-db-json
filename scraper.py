@@ -2,7 +2,7 @@ from lxml.html import parse
 import demjson
 
 def main():
-	url = 'http://en.wikipedia.org/wiki/List_of_cities_and_towns_in_India_by_population'
+	url = 'https://en.wikipedia.org/wiki/List_of_cities_and_towns_in_India_by_population'
 	page = parse(url).getroot()
 	db = {}
 	for i in xrange(1,26):
